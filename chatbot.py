@@ -52,17 +52,17 @@ documento = ''
 def padrao():
     global documento
     while True:
-        escolha = int(input('''Com o que deseja conversar hoje?
+        escolha = input('''Com o que deseja conversar hoje?
 [1] Site
 [2] Öyko
 [3] Sair
 '''))
-        if escolha == 1:
+        if escolha == '1':
             documento = site()
             break
-        elif escolha == 2:
+        elif escolha == '2':
             break
-        elif escolha == 3:
+        elif escolha == '3':
             print('Desligando...')
             exit()
         else:
