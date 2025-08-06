@@ -38,6 +38,8 @@ Se necessário, você usa as seguintes informações para formular as suas respo
 
 def site():
     url_site = input('Digite a URL do site: ')
+    if url_site == 'x':
+        padrao()
     loader = WebBaseLoader(url_site)
     lista_docs = loader.load()
     documento = ''
