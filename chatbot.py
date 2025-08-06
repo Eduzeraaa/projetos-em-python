@@ -37,15 +37,22 @@ Se necessário, você usa as seguintes informações para formular as suas respo
 
 
 def site():
-    url_site = input('Digite a URL do site: ').lower
-    if url_site == 'x':
-        padrao()
-    loader = WebBaseLoader(url_site)
-    lista_docs = loader.load()
-    documento = ''
-    for doc in lista_docs:
-        documento += doc.page_content
-    return documento
+    while True:
+        url_site = input('Digite a URL do site (ou x para voltar): ').strip()
+        if url_site.lower() == 'x':
+            return ''
+        if url_site.startswith('http://') or url_site.startswith('https://'):
+            try:
+                loader = WebBaseLoader(url_site)
+                lista_docs = loader.load()
+                documento = ''
+                for doc in lista_docs:
+                    documento += doc.page_content
+                return documento
+            except Exception as e:
+                print(f'Erro ao carregar o site: {e}')
+        else:
+            print('URL inválida. Tente novamente, ou digite ''x'' para voltar.')
 
 
 documento = ''
