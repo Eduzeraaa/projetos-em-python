@@ -37,7 +37,7 @@ Se necessário, você usa as seguintes informações para formular as suas respo
 
 
 def site():
-    url_site = input('Digite a URL do site: ')
+    url_site = input('Digite a URL do site: ').lower
     if url_site == 'x':
         padrao()
     loader = WebBaseLoader(url_site)
@@ -76,7 +76,7 @@ padrao()
 mensagens = []
 
 while True:
-    pergunta = input('User: ')
+    pergunta = input('User: ').lower
     if pergunta == 'x':
         mensagens = []
         documento = ''
