@@ -44,7 +44,7 @@ def site():
     while True:
         url_site = input('Digite a URL do site (ou x para voltar): ').strip()
         if url_site.lower() == 'x':
-            return None  # sinal para voltar
+            return None 
         if url_site.startswith('http://') or url_site.startswith('https://'):
             try:
                 loader = WebBaseLoader(url_site)
@@ -77,11 +77,11 @@ def padrao():
 
         if escolha == '1':
             documento = site()
-            if documento is None:  # usuário digitou x pra voltar
-                continue  # volta pro menu
+            if documento is None:
+                continue 
             return documento
         elif escolha == '2':
-            return ''  # sem documento externo
+            return ''
         else:
             print('Entrada inválida. Digite 1, 2, 3 ou x.')
 
@@ -97,7 +97,7 @@ def main():
             pergunta = input('User: ').strip()
             if pergunta.lower() == 'x':
                 print("Voltando para o menu principal...")
-                break  # volta para o menu principal
+                break 
 
             mensagens.append(('user', pergunta))
             resposta = resposta_bot(mensagens, documento)
