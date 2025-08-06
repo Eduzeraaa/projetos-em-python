@@ -41,7 +41,7 @@ def site():
     while True:
         url_site = input('Digite a URL do site (ou "x" para voltar): ').strip()
         if url_site.lower() == 'x':
-            return None  # Usuário quer voltar
+            return None
         if url_site.startswith('http://') or url_site.startswith('https://'):
             try:
                 loader = WebBaseLoader(url_site) 
