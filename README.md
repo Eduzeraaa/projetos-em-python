@@ -13,5 +13,16 @@
 - LangChain – Framework para agentes de linguagem
 - Groq API – Hospedagem do modelo LLaMA 3 com alto desempenho
 - WebBaseLoader (LangChain Community) – Para carregar conteúdo de páginas web
-## Ainda em desenvolvimento (!!!)
-O projeto ainda está em fase de desenvolvimento. Algumas funcionalidades podem não estar funcionando como o esperado especialmente a parte de análise de vídeos do YouTube. Assim que tudo estiver finalizado e estável, disponibilizarei a versão definitiva do projeto. Apesar da simplicidade, pode ser útil em diversas ocasiões.
+## Como usar?
+Para usar o Öyko é simples! Siga o passo a passo para não ter complicações:
+
+1 - Acesse: https://console.groq.com
+2 - Crie uma conta (ou entre com o Google);
+3 - Vá até a aba API Keys (canto superior direito);
+4 - Clique em Create API Key;
+5 - Escolha um nome pra sua Key, e clique em Submit;
+6 - Copie ela.
+⚠️ Essa chave é gratuita e SÓ VOCÊ terá acesso ao seu uso. Não compartilhe ela com ninguém.
+7 - Abra o Öyko
+8 - Na primeira vez que você abrir o programa, ele vai pedir sua chave da API da Groq. Cole a sua Key, e pronto!
+
