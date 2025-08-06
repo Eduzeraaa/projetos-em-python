@@ -9,7 +9,7 @@ Alterei coisas básicas nas instruções do Öyko, para ele conseguir conversar 
 ### Frustrações
 Por algum motivo, não estou conseguindo integrar vídeos do YouTube. Ao selecionar a opção 2, eu envio a URL do vídeo, porém, acontece um bug. Já tentei mudar a versão da biblioteca, fiz mudanças no código, pesquisei, porém não funcionou. Decidi tentar novamente amanhã, já que apesar da frustração, foi um dia produtivo.
 
-## Verão 1.0.0 - 05/08/2025
+## Versão 1.0.0 - 05/08/2025
 
 ### Adicionado
 Criei um arquivo .env pra guardar minha key do Groq. 
@@ -19,3 +19,12 @@ Fiz algumas alterações:
 - Alterei as instruções do Öyko, agora ele é um assistente expert em qualquer assunto;
 ### Frustrações
 Após mais de 12 horas pesquisando o motivo de não rodar a parte de ver vídeos do YouTube, cheguei em uma conclusão: o problema não era o código, nem a biblioteca. É algo que transcende o Python. Atualizei as bibliotecas, criei um ambiente virtual (venv), fiz alterações e substituí a biblioteca "_youtube-transcript-ai_" pelo "_pytube_", e os erros persistiram. Portanto, acabei desistindo por hora. Mas ainda sim, apesar de tamanha frustração, não descartei a ideia. Talvez em versões futuras eu consiga adicioná-lo.
+
+## Versão 1.0.1 - 06/08/2025
+
+### Adicionado
+Se o site que o usuário inserir tiver mais de 6 mil caracteres, o Öyko não consegue ler tudo. O modelo da Groq que estou usando possui uma limitação de 6000 tokens por minuto. Logo, adicionei ao meu código: se o site tiver mais de 5 mil caracteres, ele mostrará um aviso, dizendo que o conteúdo do site é muito grande, e pegará apenas os primeiros 5 mil carateres do site.
+### Alterado
+Sem alterações nessa atualização.
+### Frustrações
+Sem frustrações nessa atualização.
