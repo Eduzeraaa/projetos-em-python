@@ -27,4 +27,6 @@ Para usar o Öyko é simples! Siga o passo a passo para não ter complicações:
 - 9 - Abra o Öyko
 - 10 - Na primeira vez que você abrir o programa, ele vai pedir sua chave da API da Groq. Cole a sua Key, e pronto!
 
+
+
 ![diagrama chatbot](https://github.com/user-attachments/assets/a3f0af75-a4f4-416b-bf4e-a41be982de73)
